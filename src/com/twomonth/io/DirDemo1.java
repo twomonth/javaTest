@@ -4,7 +4,7 @@ import java.io.File;
 
 public class DirDemo1 {
     public static void main(String[] args) {
-        File file = new File("D:/idealC");
+        File file = new File("/Users/wangjianchao/IdeaProjects");
         getAllFileName(file,1);
     }
 
