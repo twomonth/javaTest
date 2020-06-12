@@ -4,7 +4,7 @@ import java.io.File;
 
 public class DirDemo1 {
     public static void main(String[] args) {
-        File file = new File("/Users/wangjianchao/IdeaProjects");
+        File file = new File("/Users/wangjianchao/WorkSpace/TJZX_OA_ANDROID/TianJinOALauncher/app/src");
         getAllFileName(file,1);
     }
 
@@ -18,17 +18,17 @@ public class DirDemo1 {
         }
         //判断是不是文件夹
         if (file.isDirectory()){
-            for (int i = 0; i < deep; i++) {
-                System.out.print("*");
-            }
+//            for (int i = 0; i < deep; i++) {
+//                System.out.print("*");
+//            }
             System.out.println(file.getAbsolutePath());
             for (File file1:file.listFiles()){
                 getAllFileName(file1,deep+1); //每深入一层deep+1
             }
         }else {
-            for (int i = 0; i < deep; i++) {
-                System.out.print("-");
-            }
+//            for (int i = 0; i < deep; i++) {
+//                System.out.print("-");
+//            }
             System.out.println(file.getName());
         }
 

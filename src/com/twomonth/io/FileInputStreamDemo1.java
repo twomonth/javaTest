@@ -5,7 +5,7 @@ import java.io.*;
 public class FileInputStreamDemo1 {
     public static InputStream fileInputStreamDemo1;
     public static void main(String[] args) {
-        File file = new File("D:\\javaWorkSpase\\javaTest\\src\\com\\twomonth\\io\\IO基础知识.md");
+        File file = new File("IO基础知识.md");
         try {
             fileInputStreamDemo1 = new FileInputStream(file);
             byte[] bytes = new byte[1024];
